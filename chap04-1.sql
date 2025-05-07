@@ -1,0 +1,51 @@
+--　例題1（p.33）
+-- select * from employee;
+--　例題3（p.34）
+--select emp_name, birthday, sal from employee;
+-- 例題4（p.34）
+--select emp_name, birthday, sal, sal * 12 from employee;
+-- 例題5（p.35）
+--select emp_name, birthday, sal, sal * 12 as 年収 from employee;
+-- 例題6（p.35）
+--select emp_name, birthday, sal, cast(sal * 12 as int)as 年収 from employee;
+----　例題7（p.36）
+--select emp_name, birthday, sal, (sal * 12) :: int as 年収 from employee;
+-- 例題1（p.36）
+--select '担当者 ' || emp_name || ' の誕生日は ' || birthday || ' です。' as 誕生日 from employee;
+-- 例題1（p.37）
+-- select emp_name, to_char(birthday, 'day, month dd, yyyy') from employee;
+-- 例題2(p.37)
+-- select emp_name, to_char(sal * 1000, '9g999g999d99') from employee;
+-- 例題1（p.40）
+-- select emp_name, birthday, sal, comm, sal + comm as 収入 from employee;
+--　例題1（p.41）
+-- select emp_name, birthday, sal, comm, sal + coalesce(comm, 0) as 月収 from employee;
+-- 例題1（p.42）
+-- select 
+--     emp_name, 
+--     case 
+--         when gender = 1 then '男'
+--         when gender = 2 then '女'
+--                     --  else '女'　でもok
+--     end as 性別
+-- from employee;
+-- -- 例題5（p.44）
+-- select 
+--     emp_name, 
+--     birthday, 
+--     sal, 
+--     comm,
+--     sal + case when comm is null then 0 else comm end
+-- from employee;
+--例題1（p.45）
+-- select * from employee order by birthday desc;
+-- -- 例題2（p.45）
+-- select * from employee order by sal desc;
+-- -- 例題3（p.46）
+-- select * from employee order by gender desc, sal desc;
+-- 例題4（p.46）
+-- select emp_name, birthday, sal, comm, sal + comm as 月収 from employee order by 月収;
+--　例題1（p.48）
+select * from employee order by sal desc limit 3 offset 1;
+
+

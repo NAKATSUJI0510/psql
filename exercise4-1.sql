@@ -1,0 +1,15 @@
+--—á‘è1
+-- select * from product
+--—á‘è2
+-- select prod_name, cost, discount from product;
+--—á‘è3
+-- select prod_name, cost, discount, (cost * discount) as Š„ˆø‰¿Ši from product;
+--@—á‘è4
+-- select prod_name, cost, discount, cost * coalesce(discount, 1) as Š„ˆø‰¿Ši from product;
+-- —á‘è5
+-- select prod_name, cost, discount, to_char(cost * coalesce(discount, 1), '9g999g999d99' )as Š„ˆø‰¿Ši from product;
+-- —á‘è6
+-- select prod_name, cost, discount, to_char(cost * coalesce(discount, 1), '9g999g999d99' )as Š„ˆø‰¿Ši from product order by 4 desc;
+-- select prod_name, cost, discount, to_char(cost * coalesce(discount, 1), '9g999g999d99' )as Š„ˆø‰¿Ši from product order by Š„ˆø‰¿Ši desc;
+--—á‘è7
+select prod_name, cost, discount, to_char(cost * coalesce(discount, 1), '9g999g999d99' )as Š„ˆø‰¿Ši from product order by Š„ˆø‰¿Ši desc limit 3;
