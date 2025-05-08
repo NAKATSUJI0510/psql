@@ -1,0 +1,37 @@
+-- —á‘è1(p.52)
+-- select emp_name, sal from employee where sal < 1500;
+-- —á‘è2(p.53)
+-- select emp_name, sal, gender from employee where gender = 2;
+-- —á‘è3(p.53)
+-- select emp_name, sal from employee where emp_name = 'ˆÀ•” O]';
+-- —á‘è4(p.54)
+-- select emp_name, sal, birthday from employee where birthday >= '1980-01-01';
+-- —á‘è5(p.54)
+-- select emp_name, sal, birthday, emp_id from employee where emp_id = 20;
+-- —á‘è1(p.55)
+-- select emp_name, sal from employee where sal between 2000 and 3000; --BETWEEN‚ðŽg‚¤ê‡
+-- select emp_name, sal from employee where sal >= 2000 and sal <= 3000;
+-- —á‘è2(p.55)
+-- select emp_name, sal from employee where sal >= 2000 and gender = 2;
+-- —á‘è3(p.56)
+-- select emp_name, sal, emp_id from employee where emp_id in(2,4,7); --IN‚ðŽg‚¤ê‡
+-- select emp_name, sal, emp_id from employee where emp_id = 2 or emp_id = 4 or emp_id = 7;
+-- —á‘è4(p.56)
+-- select emp_name, sal from employee where sal >= 2000 or gender = 2;
+-- —á‘è5(p.57)
+-- select emp_name, sal from employee where (sal between 2000 and 3000) or gender = 2;
+-- select emp_name, sal from employee where (sal >= 2000 and sal <= 3000) or gender = 2;
+-- —á‘è1(p.60)
+-- select * from customer where address like '%“s%';
+-- —á‘è3(p.61)
+-- select * from customer where cust_name like '___˜a%';
+-- —á‘è1(p.62)
+-- select * from employee where comm is not null;
+
+-- select * from employee;
+-- select * from customer;
+
+-- select * from employee where sal >= 2000 and comm is null;
+-- select * from customer where cust_id >= 10 order by cust_id desc;
+
+-- select emp_name, birthday from employee where birthday between '1983-04-02' and '1984-04-01';
