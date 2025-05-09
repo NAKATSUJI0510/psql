@@ -24,3 +24,11 @@
 
 -- ÀK8
 -- select distinct emp_id from packedsales order by emp_id;
+
+-- U‚è•Ô‚èi0509j
+-- select emp_name, birthday from employee order by 2 desc;
+-- select prod_name, cost, discount from product where cost between 10000 and 20000 and (discount is null);
+
+-- select * from packedsales where cust_address like '%`‹æ%';
+-- select cust_id, cust_name from customer where cust_id = 3;
+-- select * from customer where cust_id = 3;
